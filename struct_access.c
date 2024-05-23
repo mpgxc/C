@@ -16,7 +16,7 @@ typedef struct
   (string) calloc(sizeof(char), length); \
 })
 
-//Aloca espaço de memória e define o valor passado por parâmetro
+// Aloca espaço de memória e define o valor passado por parâmetro
 #define str_malloc(str) (                                            \
     {                                                                \
       string _tmp = (string)malloc(sizeof(char) * (int)strlen(str)); \
@@ -54,7 +54,7 @@ string toString(struct_person *ptr)
 
 int main(int argc, string *argv)
 {
-  //Opa #0
+  // Opa #0
   struct_person *person0 = struct_malloc(struct_person);
 
   person0->name = str_malloc("Mateus");
@@ -63,7 +63,7 @@ int main(int argc, string *argv)
 
   puts(toString(person0));
 
-  //Opa #1
+  // Opa #1
   struct_person person1[2];
 
   person1[0].name = "Ana Clara";
@@ -72,7 +72,7 @@ int main(int argc, string *argv)
 
   puts(toString(&person1[0]));
 
-  //Opa #2
+  // Opa #2
 
   person1[1].name = str_malloc("Emiliana Vitoria");
   person1[1].sname = str_malloc("Pinto Garcia");

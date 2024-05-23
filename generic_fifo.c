@@ -29,8 +29,8 @@ linkedList *linkedList_append(linkedList *origin_linkedList, int value)
     while (aux->next != NULL)
       aux = aux->next;
     aux->next = tmp;
-    //O intuído é criar  um novo estado para a lista
-    //e não utilizar o ponteiro de referência para manipular a memória.
+    // O intuído é criar  um novo estado para a lista
+    // e não utilizar o ponteiro de referência para manipular a memória.
     return origin_linkedList;
   }
   return tmp;
@@ -47,7 +47,7 @@ void linkedList_show(linkedList *origin_linkedList)
 
 int main(int argc, string *argv)
 {
-  //State Pattern > Imutabilidade
+  // State Pattern > Imutabilidade
 
   linkedList *my_linkedList = inlinetialize_linkedList;
 
