@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 #define BREAK_LINE puts("");
-#define array_len(arr) (sizeof(arr) / sizeof((*arr)))
+#define array_len(arr)  (sizeof(arr) / sizeof((*arr)))
 
 void reverse(int *arr, int size_arr)
 {
@@ -26,7 +26,7 @@ void show(const int *arr, int size_arr)
 
 int main(int argc, char const *argv[])
 {
-  int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+  int arr[] = {1, 2, 3, 4, 5,6 ,7 , 8, 9, 0};
   int size_arr = array_len(arr);
 
   show(arr, size_arr);

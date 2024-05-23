@@ -13,6 +13,8 @@ int *map(int *arr, int (*foo)(), int size_array)
   return tmp;
 }
 
+// Examples
+
 #define EXPRESSION_LIMIT_MAX(number, limit) number > limit
 #define EXPRESSION_LIMIT_MIN(number, limit) !EXPRESSION_LIMIT_MAX(number, limit)
 #define EXPRESSION_ODD(number) number % 0 == 0
@@ -23,7 +25,7 @@ int apply_foo(int number)
   return EXPRESSION_LIMIT_MAX(number, 5);
 }
 
-void show_arr(int *arr, int size_array)
+void show_Arr(int *arr, int size_array)
 {
   for (int index = 0; index < size_array; index++)
   {
@@ -37,7 +39,7 @@ int main(int argc, char const *argv[])
   int size_array = array_len(origin_arr);
   int *new_arr = map(origin_arr, &apply_foo, size_array);
 
-  show_arr(new_arr, size_array);
+  show_Arr(new_arr, size_array);
 
   return EXIT_SUCCESS;
 }
